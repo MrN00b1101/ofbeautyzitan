@@ -1,4 +1,4 @@
-	var link = "http://mrnoobrft.ddns.net/kennel";
+	var link = "https://mrn00b1101.github.io/ofbeautyzitan.github.io/";
 	var img1 = link+"/img/gal/1.png";
 	var img2 = link+"/img/gal/2.png";
 	var img3 = link+"/img/gal/3.png";
