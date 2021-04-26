@@ -1,4 +1,4 @@
-	var link = "https://mrn00b1101.github.io/ofbeautyzitan.github.io/";
+	var link = window.location.href;
 	var img1 = link+"/img/gal/1.jpg";
 	var img2 = link+"/img/gal/2.jpg";
 	var img3 = link+"/img/gal/3.jpg";
