@@ -1,10 +1,10 @@
 	var link = "https://mrn00b1101.github.io/ofbeautyzitan.github.io/";
-	var img1 = link+"/img/gal/1.png";
-	var img2 = link+"/img/gal/2.png";
-	var img3 = link+"/img/gal/3.png";
-	var img4 = link+"/img/gal/4.png";
-	var img5 = link+"/img/gal/5.png";
-	var img6 = link+"/img/gal/6.png";
+	var img1 = link+"/img/gal/1.jpg";
+	var img2 = link+"/img/gal/2.jpg";
+	var img3 = link+"/img/gal/3.jpg";
+	var img4 = link+"/img/gal/4.jpg";
+	var img5 = link+"/img/gal/5.jpg";
+	var img6 = link+"/img/gal/6.jpg";
 	var picS = [img1,img2,img3,img4,img5,img6];
 
 	var th0 = picS[0];
