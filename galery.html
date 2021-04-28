@@ -8,13 +8,13 @@
   <script>
     window.fbAsyncInit = function() {
       FB.init({
-        appId            : '425595730785557-id',
+        appId            : '425595730785557',
         autoLogAppEvents : true,
         xfbml            : true,
         version          : 'v10.0'
       });
       FB.api(
-    "/{album-id}/photos",
+    "/110496221180507/photos",
     function (response) {
       if (response && !response.error) {
         console.log(response);      /* handle the result */
