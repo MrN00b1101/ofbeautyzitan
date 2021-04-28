@@ -13,6 +13,13 @@
         xfbml            : true,
         version          : 'v10.0'
       });
+
+      FB.getLoginStatus(response => {
+  if(response.status === 'connected') console.log('Logged in');
+  else console.log('Logged out');
+});
+
+
       FB.api(
     "/110496221180507/photos",
     function (response) {
