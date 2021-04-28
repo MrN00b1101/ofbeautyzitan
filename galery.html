@@ -5,7 +5,9 @@
     <title>Embedded Facebook Page Photo Gallery with jQuery</title>
     <style type='text/css'> #thumbs{float:left;width:200px;} #thumbs img{display:block;margin:0 0 10px;cursor:pointer;} #viewer{float:left;} </style>
   </head>
-  <script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+<script>
     window.fbAsyncInit = function() {
       FB.init({
         appId            : '425595730785557',
@@ -61,7 +63,6 @@ function getAlbumPhotos(){
         };
     };
   </script>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
       
   <script>
 
