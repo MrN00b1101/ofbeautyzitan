@@ -13,6 +13,9 @@ body {
   width: 20rem;
 
 }
+#card{
+  width: 20rem;
+}
 @media (min-width: 992px) {
   body {
     padding-top: 0;
