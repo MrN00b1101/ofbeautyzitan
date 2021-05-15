@@ -9,7 +9,10 @@ body {
   padding-top: 54px;
   color: #868e96;
 }
+card{
+  width: 20rem;
 
+}
 @media (min-width: 992px) {
   body {
     padding-top: 0;
