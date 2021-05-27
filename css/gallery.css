@@ -1,5 +1,5 @@
 #gallerywrapper{text-align:center;}
-#gallery{display:inline-block;}
+#galler{display:inline-block;}
 .lightbox{display:inline-block;}
 .lightbox img{vertical-align:bottom;}
 .lightbox iframe{vertical-align:bottom;}
