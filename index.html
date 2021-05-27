@@ -233,52 +233,39 @@ A szőrzetének ápolása nem igényel szakembert azonban kiemelt figyelmet kell
       </div>
     </section>
  <hr class="m-0">
-	<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="gallery">
-		<div class="w-100">
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="gallery">
+	<div class="w-100">
         <h2 class="mb-5">Képgaléria</h2>
-			<!--<img id="bigPic" class="img-fluid" src="img/gal/1.png">
-			<div class="w-100 d-flex justify-content-center " >
-				<i class="fas fa-arrow-alt-circle-left fa-3x nyil text-primary" onClick="lepJobb()"></i>
-				<img id="thumb1" class="img-fluid thumb" onClick="bigValt(th0)" >
-				<img id="thumb2" class="img-fluid thumb" onClick="bigValt(th1)">
-				<img id="thumb3" class="img-fluid thumb" onClick="bigValt(th2)">
-				<img id="thumb4" class="img-fluid thumb" onClick="bigValt(th3)">
-				<img id="thumb5" class="img-fluid thumb" onClick="bigValt(th4)">
-				<i class="fas fa-arrow-alt-circle-right fa-3x nyil text-primary" onClick="lepBal()"></i>
-			</div>-->
-	  
-	      <div id="gallery">
-	
-	    </div>
-	    <script>
+	<div id="galler"></div>
+	 <script>
 	// Specify the thumbnail height, the width is calculated proportionally
-	var imgheight = 150;
-	$('#gallery').before(gallery(idlist,imgheight,true));
-	$('.lightbox').magnificPopup({
-	  delegate:'a',
-	  type:'image',
-	  tLoading:'Loading image #%curr%...',
-	  mainClass:'mfp-img-mobile',
-	  gallery:{
-	    enabled:true,
-	    navigateByImgClick:true,
-	    preload:[0,1]
-	  },
-	  image:{
-	    tError:'<a href="%url%">The image #%curr%</a> could not be loaded.',
-	  },
-	  zoom:{
-	    enabled:true,
-	    duration:300,
-	    opener:function(openerElement){
-	      return openerElement.is('img') ? openerElement : openerElement.find('img');
-	    }
-	  }
-	});
-	$('.lazy').lazyload();
+		var imgheight = 150;
+		$('#galler').before(gallery(idlist,imgheight,true));
+		$('.lightbox').magnificPopup({
+		  delegate:'a',
+		  type:'image',
+		  tLoading:'Loading image #%curr%...',
+		  mainClass:'mfp-img-mobile',
+		  gallery:{
+		    enabled:true,
+		    navigateByImgClick:true,
+		    preload:[0,1]
+		  },
+		  image:{
+		    tError:'<a href="%url%">The image #%curr%</a> could not be loaded.',
+		  },
+		  zoom:{
+		    enabled:true,
+		    duration:300,
+		    opener:function(openerElement){
+		      return openerElement.is('img') ? openerElement : openerElement.find('img');
+		    }
+		  }
+		});
+		$('.lazy').lazyload();
 	    </script>
       </div>
-	</section>
+</section>
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
