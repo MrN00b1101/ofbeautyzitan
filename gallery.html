@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="gallery.css" />
+    <link rel="stylesheet" type="text/css" href="lightbox.css" />
+
+	<script src="https://drive.google.com/uc?export=view&id=15Rn4SLIrnlP9miJYtoUlvpaFxXZV_XXJ"type="text/javascript"></script>
+    <script src="gallery.js" type="text/javascript"></script>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="lightbox.js" type="text/javascript"></script>
+    <script src="lazyload.js" type="text/javascript"></script>
+  </head>
+  <body>
+    
+      <div id="gallery">
+    </div>
+    <script>
+/*var idlist = [
+// Paste your ids below
+"1x5OB0bWUeOKc74xt_jn_iU62UmP3mz_X",
+"1Jv43cc031_4PhIRvP2dEKquMwtLhJKP7",
+"1Uo9xYz-LF1FowNwuNV0QV1hK09TkHWwQ",
+"1oPh1iXS8HMS99717b-HgMTyNkoQqrGNC",
+"1Ef8Pcq6m22U94Q2Y2Dda2YeOu6-WAxVM",
+"1BbLlG-RBTdjAIY5fu8MkayW3a9CynLV6",
+"1PMfnr6ugexwP4t6jDaidYBVQhqu0Y0RM",
+"1IBGKSr6k4eHabrEZFay39kWfU7dpebow",
+"1z3CSrIx4NXannC6hmXy0nGR6p3AUHp6r",
+"vid-1DTRZyWQvZGsMY38vei7bOvGben2DSGuM"
+];*/
+// Specify the thumbnail height, the width is calculated proportionally
+var imgheight = 150;
+$('#gallery').before(gallery(idlist,imgheight,true));
+$('.lightbox').magnificPopup({
+  delegate:'a',
+  type:'image',
+  tLoading:'Loading image #%curr%...',
+  mainClass:'mfp-img-mobile',
+  gallery:{
+    enabled:true,
+    navigateByImgClick:true,
+    preload:[0,1]
+  },
+  image:{
+    tError:'<a href="%url%">The image #%curr%</a> could not be loaded.',
+  },
+  zoom:{
+    enabled:true,
+    duration:300,
+    opener:function(openerElement){
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
+  }
+});
+$('.lazy').lazyload();
+    </script>
+  </body>
+</html>
