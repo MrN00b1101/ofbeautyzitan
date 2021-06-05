@@ -31,7 +31,7 @@
 </head>
 
 <body id="page-top">
-
+ 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Of Beauty Zitan</span>
@@ -255,7 +255,7 @@ A szőrzetének ápolása nem igényel szakembert azonban kiemelt figyelmet kell
 		    preload:[0,1]
 		  },
 		  image:{
-		    tError:'<a href="%url%">The image #%curr%</a> could not be loaded.',
+		    tError:'<a href="%url%">A kép #%curr%</a> nem tölthető be.',
 		  },
 		  zoom:{
 		    enabled:true,
@@ -270,7 +270,7 @@ A szőrzetének ápolása nem igényel szakembert azonban kiemelt figyelmet kell
       </div>
 </section>
     <hr class="m-0">
-
+<!--
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
         <h2 class="mb-5">Várható almok</h2>
@@ -293,24 +293,28 @@ A szőrzetének ápolása nem igényel szakembert azonban kiemelt figyelmet kell
         </ul>
       </div>
     </section>
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="news">
+-->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
         <h2 class="mb-5">Híreink</h2>
-        <ul class="fa-ul mb-0">
+        
+        <ul class="fa-ul align-items-center">   
           <li>
-            <div class="card" style="width: 18rem;">
+            <div class="card w-100" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title">Új alom érkezett!</h5>
                 <p class="card-text">Új alommal bővült a kennelünk!</p>
-                <a href="#" class="card-link">Tovább olvasom</a>
+                <a href="firstNew.html" data-toggle="modal" data-target="#elsoHir" class="card-link">Tovább olvasom</a>       
                 <div class="card-footer text-muted">
                   2021.05.10
                 </div>
               </div>
             </div>
-          </li>
+
+            
+          </li><br>
           <li>
-            <div class="card" style="width: 18rem;">
+            <div class="card w-100" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title">Kiállításon jártunk</h5>
                 <p class="card-text">Meglátogattuk az XY kiállítást, olvasson tovább a beszámolónkért.</p>
@@ -320,9 +324,9 @@ A szőrzetének ápolása nem igényel szakembert azonban kiemelt figyelmet kell
                 </div>
               </div>
             </div>
-          </li>
+          </li><br>
           <li>
-            <div class="card" style="width: 18rem;">
+            <div class="card w-100" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title">Újabb kiskutyáink találtak gazdára</h5>
                 <p class="card-text">Új otthonába költözött Athos</p>
@@ -332,9 +336,32 @@ A szőrzetének ápolása nem igényel szakembert azonban kiemelt figyelmet kell
                 </div>
               </div>
             </div>
-          </li>
+          </li><br>
         </ul>
+        <div id="elsoHir" class="modal fade text-center h-75">
+          <div class="modal-dialog modal-dialog-centered modal-xl ">
+            <div class="modal-content ">
+              <iframe  class="embed-responsive-item" height="700vh" src="news/firstNew.htm" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
+      
+ <!--     <div id="exampleModal" class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Új alommal bővült a család. Az alomban 5 kiskutya született. 3 szuka 2 kan. Mindannyian makk egészségesek és várják hogy új otthonukba mehessenek!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+            </div>
+          </div>
+      </div>
+    -->
     </section>
   </div>
 
@@ -360,7 +387,9 @@ A szőrzetének ápolása nem igényel szakembert azonban kiemelt figyelmet kell
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
   <script src="js/gal.js"></script>
-
+    <!-- Start cookieyes banner -->
+    <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/8ba106af2e5285c23d6de661.js"></script>
+    <!-- End cookieyes banner --> 
 </body>
 
 </html>
