@@ -1,0 +1,5 @@
+#gallerywrapper{text-align:center;}
+#galler{display:inline-block;}
+.lightbox{display:inline-block;}
+.lightbox img{vertical-align:bottom;}
+.lightbox iframe{vertical-align:bottom;}
