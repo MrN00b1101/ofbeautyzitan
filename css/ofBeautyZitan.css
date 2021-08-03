@@ -3,6 +3,12 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-ofBeautyZitan/blob/master/LICENSE)
  */
+ body.hun :lang(en) {
+  display: none;
+}
+body.en :lang(hun) {
+  display: none;
+}
 .header-title
         {
           text-align: center;
